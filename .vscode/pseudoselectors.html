@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors</title>
+</head>
+<style>
+    li:nth-child(2){
+        color: salmon;
+    }
+    input{
+        display: block;
+        margin: 3%;
+    }.container{
+          display: block;
+          width:  240px;
+          margin: auto;
+    }
+    input[type="text"]{
+        padding: 23px;
+        border: 2px solid cornflowerblue;
+    }input[type="password"]{
+        border: 2px solid pink;
+    }a[target]{
+        font-family:fantasy ;
+        color: plum;
+    }li:nth-child(2n+0){
+        color: royalblue;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to GOOGLE</a></h1>
+        <form action="" class="form -control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password"placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+<li class="item" id="item-1">item-1</li>
+<li class="item" id="item-2">item-2</li>
+<li class="item" id="item-3">item-3</li>
+<li class="item" id="item-4">item-4</li>
+        <ul>
+    </div>
+</body>
+</html>

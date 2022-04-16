@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+</head>
+<style>
+
+ .navigation{
+display: flex;
+font-size: 34px;
+justify-content: center;
+
+ }
+body{
+    margin: 0%;
+    padding: 0%;
+background-color: grey;
+color: blanchedalmond;
+background: url('https://source.unsplash.com/WLUHO9A_xik/1600x900') no-repeat center center/cover;
+}
+header::after{
+opacity: 5;
+top: 0%;
+left: 0%;
+opacity: 7;
+z-index: -1;
+}
+    
+li{
+    list-style:none;
+    padding: 34px 23px;
+    /* flex-direction: row-reverse; */
+    align-items: center;
+}
+section{
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid salmon; */
+    margin: 3px 23px ;
+    align-items: center;
+justify-content: center;
+}
+section::after{
+    content: "this is a content" 
+}
+
+
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>welcome to coding world</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, excepturi enim eaque itaque corrupti quos cupiditate aspernatur delectus eveniet tempore nisi assumenda odit fugit distinctio, temporibus ex expedita repellat. Error.  </p>
+        </section>
+        <!-- <hr>   -->
+    </header>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="para"> This is a heading</h1>
+        <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur est neque nemo expedita aliquid magni odit dolore iure at! Cumque dignissimos ea vitae vel molestias dolores alias recusandae ab, rerum nostrum? Nulla, error! Eveniet perspiciatis, dolor quaerat et quos facilis provident accusantium quisquam quia deleniti a blanditiis id atque illo cumque! Amet ipsam ullam magni excepturi beatae quisquam sint. Ipsam quo error assumenda? Alias adipisci nihil sit ipsum moll
+        </div>
+    </div>
+    <script>
+        // console.log(5*10);
+        // functions:-
+        // create the function 
+        // call the function
+        // function func(){
+        //     console.log('this is a function');
+        // }
+        // func();
+//         var a;
+//  function name(){
+// a=prompt('What is your name');
+// console.log('hello '+a);
+// }
+// name();
+// function sumnumber(num1,num2){
+//     var result=num1+num2;
+//     console.log(result);
+// }
+// sumnumber(3,4);
+
+// for loops and while loops
+
+// var num=0;
+// while(num<100){
+//     num+=1;
+//     console.log(num);
+// }
+// for(let num=0;num<100;num++){
+//     consoobe.log(num);
+// }
+
+// data types:
+let yourage=18;
+let yourname='bob';
+let name={first:'jane',last:'doe'}//object
+let truth=false//boolean
+let groceries=['apple','banana','oranges'];//array
+let random;//undefined
+let nothing=null;//value null
+
+// Strings
+
+// let fruit='banana,apple,orange,blackberry';
+// let morefruit='banana\napple';  //new line
+// console.log(morefruit);
+// console.log(fruit.length);
+// console.log(fruit.indexOf('na'));
+// console.log(fruit.slice(2,6));
+// console.log(fruit.replace('an','12'));
+// console.log(fruit.toUpperCase())
+// console.log(fruit[2]);
+// console.log(fruit.split(','));//split by coma
+
+
+// array
+// let fruits=['banana','apple','orange','pineapples'];
+fruits=new Array('banana','apple','orange','pineapples');
+// // alert(fruits[2]);
+// fruits[0]='pear';
+// console.log(fruits[0]);
+// for(let i=0;i<fruits.length;i++){
+//     console.log(fruits[i]);
+// }
+
+
+// array in common
+console.log('to string',fruits.toString());
+console.log(fruits.join('-*-'));
+console.log(fruits.pop(),fruits);//remove last item
+console.log(fruits.push('blackberries'),fruits);
+fruits.shift()
+fruits[4]='new fruit';
+console.log(fruits);
+
+
+//sorting
+let somenumber=[5,10,3,4,67,5,45,31];
+console.log(somenumber.sort(function(a,b){return b-a}));//if you want to sort in descending order
+console.log(somenumber.sort(function(a,b){return a-b}));//if you want to sort in ascending  orderemoty
+
+let emptyarray=new Array();
+for (let num =0;num<=10;num++){
+emptyarray.push(num);
+}
+console.log(emptyarray);
+
+// objects
+let student={first:'uttam'
+,last:'pandey'
+,age:24,
+height:170,
+studentinfo:function(){
+    return this.first + '\n' +this.last + '\n' + this.age;
+}
+};
+for(let key in student){
+    console.log(`${key} : ${student[key]}`);
+}
+// student.gender="male";
+// console.log(student);
+
+// console.log(student.first);
+// console.log(student.last);
+// console.log(student.age);
+// student.first='uttamnot';
+// student.age++;
+// console.log(student.age);
+// console.log(student.first);
+// console.log(student.studentinfo());
+
+
+//conditionals control flows
+// var age=prompt('Enter Your age');
+//   if(age>=18&&age<=35){
+//       status='Target demo'
+//       console.log(status);
+//   }else{
+//       status='not my audience';
+//       console.log(status);
+//   }
+//switch 
+
+switch (0){
+    case 0:
+        text='weekend';
+        break;
+    case 5:
+        text='weekend';
+        break;
+    default:[]
+        text='weekday';      
+}console.log(text);
+  //computed properties
+//   const key1="obj1";
+//   const key2="obj2";
+
+//   const value1="myvalue1";
+//   const value2="myvalue2";
+// // const obj={
+// //     [key1]:value1,
+// //     [key2]:value2
+// // };console.log(obj);
+// const obj={};
+// obj[key1]=value1;
+// obj[key2]=value2;
+// console.log(obj);
+const array1=[1,2,3];
+const array2=[4,5,6];
+const newarray=[...array1,array2];
+console.log(newarray);
+const newArray=[..."abc"];
+console.log(newArray);
+// spread operatr in objects
+const obj1={
+    
+}
+    </script>
+</body>
+</html>
